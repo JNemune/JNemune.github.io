@@ -4,135 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه محمدجواد محمدی</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <title>رزومه محمدجواد محمدی - مهندس مکانیک و توسعه‌دهنده الگوریتم</title>
     <style>
         body {
-            font-family: 'Vazirmatn', sans-serif;
-            line-height: 1.8;
-            background: #ffffff;
-            color: #333;
+            font-family: 'XB Niloofar';
+            font-size: 11pt;
+            line-height: 1.7;
+            color: #111111;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
-            text-align: right;
         }
 
         .container {
-            max-width: 850px;
-            margin: 20px auto;
-            padding: 25px;
-            border: 1px solid #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 30px;
         }
 
         .header {
             text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2d3748;
         }
 
         .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            font-weight: 700;
+            font-size: 24pt;
+            margin: 0 0 10px 0;
+            color: #1a202c;
+            font-weight: bold;
+            letter-spacing: -0.5px;
         }
 
-        .header p {
-            margin: 5px 0;
-            font-size: 1.1em;
+        .header .subtitle {
+            font-size: 13pt;
+            color: #4a5568;
+            margin: 0 0 15px 0;
+            font-weight: 500;
         }
 
         .contact-info {
-            margin-top: 10px;
-            font-size: 1em;
+            display: block;
             direction: ltr;
-            /* Keep contact info LTR for better formatting */
+            font-size: 10pt;
+            color: #4a5568;
+            margin-top: 10px;
         }
 
         .contact-info a {
-            color: #007bff;
+            color: #2b6cb0;
             text-decoration: none;
+            font-weight: 500;
         }
 
         .contact-info a:hover {
             text-decoration: underline;
         }
 
+        .contact-separator {
+            color: #cbd5e0;
+            margin: 0 8px;
+        }
+
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            page-break-inside: avoid;
         }
 
-        .section h2 {
-            font-size: 1.4em;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
+        .section-title {
+            font-size: 14pt;
+            color: #1a365d;
+            margin: 0 0 12px 0;
+            padding-bottom: 4px;
+            border-bottom: 1px solid #2b6cb0;
+            font-weight: bold;
+            position: relative;
         }
 
-        .summary p {
+        .summary-text {
+            text-align: justify;
+            margin: 0;
+            color: #2d3748;
+        }
+
+        .skills-grid {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-item {
+            margin-bottom: 8px;
+            color: #2d3748;
+        }
+
+        .skills-item strong {
+            color: #1a202c;
+            display: inline-block;
+            min-width: 160px;
+        }
+
+        .entry {
+            margin-bottom: 18px;
+            page-break-inside: avoid;
+        }
+
+        .entry-header {
+            margin-bottom: 5px;
+        }
+
+        .entry-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 6px;
+        }
+
+        .entry-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+
+        .entry-title {
+            font-size: 11.5pt;
+            font-weight: bold;
+            color: #1a202c;
+            text-align: right;
+        }
+
+        .entry-meta {
+            font-size: 10pt;
+            color: #4a5568;
+            text-align: left;
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        .entry-subtitle {
+            font-size: 10.5pt;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 6px;
+        }
+
+        ul.entry-details {
+            margin: 0;
+            padding-right: 20px;
+            list-style-type: square;
+        }
+
+        ul.entry-details li {
+            margin-bottom: 5px;
+            color: #2d3748;
             text-align: justify;
         }
 
-        ul {
-            padding-right: 20px;
-            margin: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .experience .job-title {
-            font-weight: 700;
-            font-size: 1.1em;
-        }
-
-        .experience .company-date {
-            display: flex;
-            justify-content: space-between;
-            font-style: italic;
-            color: #555;
-            margin-bottom: 5px;
-        }
-
-        .skills-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .skills-list li {
-            width: 50%;
-            margin-bottom: 8px;
-        }
-
-        .skills-list strong {
-            font-weight: 700;
-        }
-
-        .project-title {
-            font-weight: 700;
-        }
-
         .project-tech {
-            font-style: italic;
-            color: #555;
-            font-size: 0.9em;
+            font-size: 9.5pt;
+            color: #2b6cb0;
+            margin-top: 4px;
+            font-weight: 500;
+            direction: ltr;
+            text-align: right;
         }
 
-        .education .degree {
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
+        @media print {
+            body {
+                font-size: 10pt;
+                color: #000000;
+                background-color: #ffffff;
+            }
 
-        .education .university-details {
-            display: flex;
-            justify-content: space-between;
-            font-style: italic;
-            color: #555;
+            @page {
+                size: A4;
+                margin: 15mm 12mm;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+
+            .header {
+                border-bottom: 2px solid #000000;
+                margin-bottom: 25px;
+                padding-bottom: 15px;
+            }
+
+            .section-title {
+                color: #000000;
+                border-bottom: 1px solid #000000;
+                page-break-after: avoid;
+            }
+
+            .entry {
+                page-break-inside: avoid;
+            }
+
+            .contact-info a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .project-tech {
+                color: #444444;
+            }
         }
     </style>
 </head>
@@ -140,103 +219,207 @@
 <body>
 
     <div class="container">
+
+        <!-- هدر رزومه -->
         <div class="header">
             <h1>محمدجواد محمدی</h1>
-            <p>مهندس مکانیک | متخصص مکاترونیک و رباتیک</p>
+            <div class="subtitle">مهندس مکانیک | توسعه‌دهنده نرم‌افزار و الگوریتم</div>
             <div class="contact-info">
-                <a href="https://github.com/JNemune" target="_blank">GitHub</a> | <a
-                    href="mailto:jnemune2002@gmail.com">jnemune2002@gmail.com</a> | 09362043282 | تهران، ایران
+                <a href="https://github.com/JNemune" target="_blank">github.com/JNemune</a>
+                <span class="contact-separator">|</span>
+                <a href="mailto:jnemune2002@gmail.com">jnemune2002@gmail.com</a>
+                <span class="contact-separator">|</span>
+                <span>09362043282</span>
+                <span class="contact-separator">|</span>
+                <span>تهران، ایران</span>
             </div>
         </div>
 
-        <div class="section summary">
-            <h2>خلاصه</h2>
-            <p>
-                مهندس مکانیک با تخصص در طراحی و ساخت سیستم‌های مکاترونیکی و رباتیک. با پیش‌زمینه‌ای قوی در مهندسی نرم‌افزار و توسعه سیستم‌های داده‌محور، توانایی منحصربه‌فردی در پل زدن میان دنیای فیزیکی و دیجیتال دارم. تجربه‌ی من در معماری نرم‌افزار و مدل‌سازی فرآیندهای پیچیده، مستقیماً در طراحی الگوریتم‌های کنترل، ناوبری و سیستم‌های هوشمند برای ربات‌ها به کار گرفته می‌شود. با تسلط بر ابزارهای کلیدی مانند ROS 2 و MATLAB و تجربه‌ی عملی در ساخت سیستم‌های اندازه‌گیری از پایه، به دنبال ایفای نقش در توسعه‌ی نسل بعدی سیستم‌های خودکار و هوشمند هستم.
+        <!-- خلاصه حرفه‌ای -->
+        <div class="section">
+            <div class="section-title">خلاصه</div>
+            <p class="summary-text">
+                مهندس مکانیک با پیش‌زمینه‌ در توسعه نرم‌افزار، الگوریتم‌های بهینه‌سازی و پردازش سیگنال. تجربه عملی من در
+                طراحی سیستم‌های مکاترونیکی همواره با تمرکز بر تحلیل داده‌های فیزیکی (ارتعاشات، سنسورها) و پیاده‌سازی
+                مدل‌های ریاضی همراه بوده است. با تسلط بر پایتون و متلب و توانایی توسعه بک‌اند و رابط‌های کاربری (PyQt)،
+                علاقه‌مندم مهارت‌های خود در استخراج ویژگی از سیگنال‌های خام و الگوریتم‌های تحلیلی را برای حل مسائل
+                پیچیده و خودکارسازی فرآیندها در صنعت به کار بگیرم.
             </p>
         </div>
 
+        <!-- مهارت‌های کلیدی -->
         <div class="section">
-            <h2>مهارت‌ها</h2>
-            <ul class="skills-list">
-                <li><strong>زبان‌های برنامه‌نویسی:</strong> Python, MATLAB, Cpp, C</li>
-                <li><strong>رباتیک و سیستم‌های کنترلی:</strong> ROS 2, Embedded Systems, Sensor Fusion</li>
-                <li><strong>پایگاه داده و بک‌اند:</strong> Django (DRF), PostgreSQL, SQLite</li>
-                <li><strong>نرم‌افزارهای مهندسی:</strong> SolidWorks, ADAMS, MATLAB Simulink</li>
-                <li><strong>حوزه‌های تخصصی:</strong> معماری نرم‌افزار ربات، سیستم‌های مکاترونیک، تحلیل دینامیکی، بهینه‌سازی</li>
-                <li><strong>زبان:</strong> انگلیسی (مکالمه و مکاتبه حرفه‌ای)</li>
+            <div class="section-title">مهارت‌ها</div>
+            <ul class="skills-grid">
+                <li class="skills-item"><strong>نرم‌افزار و برنامه‌نویسی:</strong> Python (Django, PySide6), MATLAB,
+                    C++, C</li>
+                <li class="skills-item"><strong>الگوریتم و مدل‌سازی:</strong> Signal Processing (FFT, Filters),
+                    Heuristic Optimization (GA, PSO, NSGA-II), Mathematical Modeling</li>
+                <li class="skills-item"><strong>سخت‌افزار و کنترل:</strong> Sensor Fusion (IMU, Load Cell),
+                    Microcontrollers, Embedded Systems, I2C</li>
+                <li class="skills-item"><strong>مهارت‌های توسعه:</strong> System Architecture, Agile/Scrum (Scrum
+                    Master), Multi-threading, PostgreSQL</li>
             </ul>
         </div>
 
-        <div class="section experience">
-            <h2>سوابق شغلی</h2>
-            <div class="job">
-                <p class="job-title">کارآموز ثابت‌افزار (Firmware Engineer Intern)</p>
-                <div class="company-date">
-                    <span>فن‌آوری‌های هوشمند کاشف</span>
-                    <span>تیر ۱۴۰۴ – اکنون</span>
-                </div>
-                <ul>
-                    <li>توسعه ثابت‌افزار (Firmware) با C برای میکروکنترلر جهت راه‌اندازی و کنترل برد دقیق اندازه‌گیری AD5940.</li>
-                    <li>پیاده‌سازی تست‌های الکتروشیمیایی به روش کرونوآمپرومتری (Chronoamperometry) با استفاده از الکترودهای مینیاتوری.</li>
-                    <li>دریافت و پردازش داده‌های خام از سنسور برای تحلیل سیگنال‌های الکتروشیمیایی.</li>
+        <!-- سوابق شغلی -->
+        <div class="section">
+            <div class="section-title">سوابق شغلی</div>
+
+            <!-- موقعیت اول -->
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">کارآموز ثابت‌افزار (Firmware Engineer Intern)</td>
+                        <td class="entry-meta">تیر ۱۴۰۴ – دی ۱۴۰۴</td>
+                    </tr>
+                </table>
+                <div class="entry-subtitle">فن‌آوری‌های هوشمند کاشف</div>
+                <ul class="entry-details">
+                    <li>توسعه نرم‌افزار مصورسازی داده (Electronic Lab Notebook) با PyQt (PySide6) برای مانیتورینگ و
+                        تحلیل سیگنال‌های الکتروشیمیایی.</li>
+                    <li>برنامه‌نویسی میکروکنترلر با زبان C جهت راه‌اندازی برد اندازه‌گیری دقیق AD5940، شامل دریافت و
+                        پردازش سیگنال‌های خام از سنسورهای مینیاتوری با فرکانس نمونه‌برداری ۱۰۰ هرتز.</li>
                 </ul>
             </div>
-            <div class="job">
-                <p class="job-title">مهندس نرم‌افزار</p>
-                <div class="company-date">
-                    <span>شرکت چوب لباسی رنگین‌کمان</span>
-                    <span>بهمن ۱۴۰۰ – تیر ۱۴۰۴</span>
-                </div>
-                <ul>
-                    <li>ایفای نقش محوری در معماری و توسعه بک‌اند سیستم ERP "Rainbow-Django" با استفاده از Python و Django REST Framework.</li>
-                    <li>طراحی و پیاده‌سازی ماژول مدیریت انبار که به افزایش دقت در ردیابی موجودی و کاهش مغایرت‌ها منجر شد.</li>
-                    <li>بهینه‌سازی کوئری‌های دیتابیس و APIها که دسترسی سریع‌تر به داده‌ها را برای بخش مالی فراهم آورد.</li>
+
+            <!-- موقعیت دوم -->
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">مهندس نرم‌افزار (Software Engineer)</td>
+                        <td class="entry-meta">بهمن ۱۴۰۰ – تیر ۱۴۰۴</td>
+                    </tr>
+                </table>
+                <div class="entry-subtitle">شرکت چوب لباسی رنگین‌کمان</div>
+                <ul class="entry-details">
+                    <li>ایفای نقش در معماری و توسعه بک‌اند سیستم ERP سازمان با استفاده از Python و Django REST
+                        Framework.</li>
+                    <li>پیاده‌سازی پردازش‌های همزمان (Multi-threading) برای بهینه‌سازی توابع کلیدی و افزایش کارایی
+                        بک‌اند سیستم.</li>
+                    <li>فعالیت به عنوان اسکرام مستر (Scrum Master)، مدیریت فرآیندهای چابک تیم توسعه و تسهیل ارتباطات
+                        بین‌تیمی.</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="section projects">
-            <h2>پروژه‌های کلیدی</h2>
-            <ul>
-                <li>
-                    <span class="project-title">Room-Service Core: A ROS 2 Backend for In-Apartment Deliveries:</span>
-                    معماری و پیاده‌سازی کامل بک‌اند نرم‌افزاری یک ربات متحرک با استفاده از ROS 2. این سیستم با معماری سرویس‌گرا، چرخه عمر یک سفارش (از ثبت تا اجرا و لغو) را مدیریت می‌کند. قابلیت کلیدی آن، مدیریت هوشمند وظایف در شرایط باتری کم است که در آن ربات وظیفه فعال خود را متوقف کرده و پس از شارژ مجدد، آن را به صورت خودکار ادامه می‌دهد.
-                    <br><span class="project-tech">تکنولوژی‌ها: ROS 2, Python (rclpy), Multi-Threaded Executors, Custom Interfaces</span>
-                </li>
-                 <li>
-                    <span class="project-title">Magnetic Vibration Sensor:</span>
-                    طراحی و ساخت یک سیستم کامل برای اندازه‌گیری ارتعاشات یک سیستم مکانیکی (تیر یکسرگیردار). این پروژه شامل طراحی سنسور بر اساس قانون القای فارادی، ساخت مدار آماده‌سازی سیگنال (فیلتر RC و تقویت‌کننده Op-Amp)، برنامه‌نویسی میکروکنترلر (Arduino) برای نمونه‌برداری با فرکانس 1kHz، و تحلیل دینامیکی برای استخراج فرکانس طبیعی سیستم با استفاده از FFT.
-                    <br><span class="project-tech">تکنولوژی‌ها: MATLAB, Arduino (C++), Signal Conditioning, FFT, Mechanical Vibrations</span>
-                </li>
-                <li>
-                    <span class="project-title">Six-Bar-Watt-Linkage:</span>
-                    تحلیل سینماتیکی و دینامیکی کامل مکانیزم وات شش‌میله‌ای برای بهینه‌سازی مسیر حرکت.
-                    <br><span class="project-tech">تکنولوژی‌ها: MATLAB, ADAMS</span>
-                </li>
-                <li>
-                    <span class="project-title">Optimization of Mechanical Systems:</span>
-                    حل مسائل بهینه‌سازی مهندسی مکانیک با الگوریتم‌های مدرن. پروژه‌ها شامل بهینه‌سازی توپولوژی و ابعاد خرپا با الگوریتم‌های ژنتیک (GA) و ازدحام ذرات (PSO)، و طراحی چندهدفه هیت‌سینک با NSGA-II برای یافتن بهترین مصالحه بین دما و هزینه.
-                    <br><span class="project-tech">تکنولوژی‌ها: MATLAB, Python, Genetic Algorithms, PSO, NSGA-II</span>
-                </li>
-                <li>
-                    <span class="project-title">Robotics Sensor Fusion (IMU & Load Cell):</span>
-                    پیاده‌سازی سیستم ردیابی سه‌بعدی وضعیت (Orientation) و اندازه‌گیری نیرو با استفاده از سنسور IMU (MPU6050) و لودسل. این پروژه شامل خواندن داده‌های سنسور از طریق پروتکل I2C و پیاده‌سازی فیلتر مکمل برای دستیابی به تخمین پایدار از وضعیت ربات است.
-                    <br><span class="project-tech">تکنولوژی‌ها: Arduino (C++), I2C, Sensor Fusion, Complementary Filter</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section education">
-            <h2>تحصیلات</h2>
-            <p class="degree">کارشناسی مهندسی مکانیک</p>
-            <div class="university-details">
-                <span>دانشگاه تهران - تهران، ایران</span>
-                <span>مهر ۱۴۰۰ – اکنون</span>
+            <!-- موقعیت سوم -->
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">توسعه‌دهنده بک‌اند (پروژه‌ای)</td>
+                        <td class="entry-meta">دوره پروژه‌ای</td>
+                    </tr>
+                </table>
+                <div class="entry-subtitle">پژوهشکده فناوری‌های همگرا دانشگاه تهران (NBIC)</div>
+                <ul class="entry-details">
+                    <li>طراحی و توسعه سیستم بک‌اند پلتفرم وب Uput جهت پیاده‌سازی و برگزاری هکاتون‌ها و مسابقات حل مسئله
+                        چالش‌های صنعتی.</li>
+                    <!-- <li>پیاده‌سازی ماژول‌های مدیریت چرخه مسابقات شامل ثبت نیازهای شرکت‌ها، زیرسیستم ارسال راه‌حل توسط
+                        تیم‌ها، و پنل ارزیابی و داوری منتورها.</li> -->
+                </ul>
             </div>
-        </div>
 
-    </div>
+            <!-- پروژه‌های کلیدی تحلیلی و مهندسی -->
+            <div class="section">
+                <div class="section-title">پروژه‌ها</div>
+
+                <!-- پروژه ۱ -->
+                <div class="entry">
+                    <table class="entry-table">
+                        <tr>
+                            <td class="entry-title">مدل‌سازی یادگیری ماشین برای نگهداری پیش‌بینانه تجهیزات صنعتی
+                                <!-- <a href="https://github.com/JNemune/نام-مخزن-شما" target="_blank"
+                                    style="font-weight: normal; font-size: 10pt; color: #2b6cb0; text-decoration: none; margin-right: 8px; font-family: Arial, sans-serif; direction: ltr; display: inline-block;">[GitHub]</a> -->
+                            </td>
+                            <td class="entry-meta">پروژه تحلیل داده و هوش مصنوعی</td>
+                        </tr>
+                    </table>
+                    <ul class="entry-details">
+                        <li>تحلیل اکتشافی داده‌ها (EDA)، پاک‌سازی و پیش‌پردازش داده‌های ساختاریافته‌ی حسگرهای فیزیکی
+                            ماشین‌آلات (شامل دما، گشتاور و سرعت دورانی) جهت آماده‌سازی برای فرآیند یادگیری.</li>
+                        <li>پیاده‌سازی، آموزش و ارزیابی مدل‌های طبقه‌بندی کلاسیک (مانند Gradient
+                            Boosting) با استفاده از کتابخانه Scikit-Learn جهت پیش‌بینی هوشمند و دسته‌بندی انواع شکست‌های
+                            مکانیکی.</li>
+                    </ul>
+                    <div class="project-tech">Technologies: Python, Pandas, NumPy, Scikit-Learn, Predictive Maintenance,
+                        Classification</div>
+                </div>
+
+                <!-- پروژه ۲ -->
+                <div class="entry">
+                    <table class="entry-table">
+                        <tr>
+                            <td class="entry-title">طراحی سنسور ارتعاشات مغناطیسی و پردازش سیگنال</td>
+                            <td class="entry-meta">پروژه ساخت و تحلیل</td>
+                        </tr>
+                    </table>
+                    <ul class="entry-details">
+                        <li>طراحی و ساخت کامل یک سیستم اندازه‌گیری ارتعاشات کم‌فرکانس (۱ تا ۱۰ هرتز) مبتنی بر قانون
+                            القای
+                            فارادی، شامل مدار آماده‌سازی سیگنال (فیلتر RC و تقویت‌کننده Op-Amp).</li>
+                        <li>توسعه اسکریپت‌های تحلیلی در MATLAB و استفاده از تبدیل فوریه سریع (FFT) روی داده‌های سری
+                            زمانی
+                            برای استخراج دقیق فرکانس طبیعی سیستم (~۱۳.۴ هرتز).</li>
+                    </ul>
+                    <div class="project-tech">Technologies: MATLAB, Arduino (C++), Signal Conditioning, FFT, Mechanical
+                        Vibrations</div>
+                </div>
+
+                <!-- پروژه ۳ -->
+                <div class="entry">
+                    <table class="entry-table">
+                        <tr>
+                            <td class="entry-title">بهینه‌سازی سیستم‌های مکانیکی (Optimization Algorithms)</td>
+                            <td class="entry-meta">پروژه مدل‌سازی عددی</td>
+                        </tr>
+                    </table>
+                    <ul class="entry-details">
+                        <li>پیاده‌سازی الگوریتم‌های تکاملی و هوشمند نظیر ژنتیک (GA)، ازدحام ذرات (PSO) و NSGA-II در
+                            محیط‌های
+                            پایتون و متلب.</li>
+                        <li>فرمول‌بندی ریاضی مسائل غیرخطی و چندهدفه مهندسی (مانند بهینه‌سازی توپولوژی خرپا و هیت‌سینک) و
+                            تولید جبهه پارتو (Pareto Front) جهت ایجاد تعادل بهینه بین متغیرهای چندگانه.</li>
+                    </ul>
+                    <div class="project-tech">Technologies: MATLAB, Python, Genetic Algorithms, PSO, NSGA-II</div>
+                </div>
+
+                <!-- پروژه ۴ -->
+                <div class="entry">
+                    <table class="entry-table">
+                        <tr>
+                            <td class="entry-title">ربات‌های خودکار و موتورهای تصمیم‌گیر هوشمند (AI Decision Engines)
+                            </td>
+                            <td class="entry-meta">توسعه هوش الگوریتمی</td>
+                        </tr>
+                    </table>
+                    <ul class="entry-details">
+                        <li>توسعه هوش مصنوعی و ربات‌های خودکار برای بازی‌های استراتژیک (MineSweeper و Othello) در پایتون
+                            و
+                            C++ با استفاده از منطق احتمالات، تحلیل ماتریس همسایگی و الگوریتم‌های چرخه‌ی عمر وظایف.</li>
+                        <li>توسعه نرم‌افزار شبیه‌ساز مدیریت مرکزی آسانسور مبتنی بر الگوریتم جستجوی مطلع *A با هدف
+                            کمینه‌سازی
+                            زمان انتظار کاربران و بهینه‌سازی مصرف انرژی.</li>
+                    </ul>
+                    <div class="project-tech">Technologies: Python, C++, A* Search, Logic-Based Strategies, ROS 2
+                        Principles
+                    </div>
+                </div>
+
+                <!-- تحصیلات -->
+                <div class="section">
+                    <div class="section-title">تحصیلات</div>
+                    <div class="entry">
+                        <table class="entry-table">
+                            <tr>
+                                <td class="entry-title">کارشناسی مهندسی مکانیک</td>
+                                <td class="entry-meta">مهر ۱۴۰۰ – اکنون</td>
+                            </tr>
+                        </table>
+                        <div class="entry-subtitle">دانشگاه تهران - تهران، ایران</div>
+                    </div>
+                </div>
+
+            </div>
 
 </body>
 
