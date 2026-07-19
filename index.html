@@ -1,426 +1,196 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه محمدجواد محمدی - مهندس مکانیک و توسعه‌دهنده الگوریتم</title>
+    <title>رزومه محمدجواد محمدی</title>
     <style>
-        body {
-            font-family: 'XB Niloofar';
-            font-size: 11pt;
-            line-height: 1.7;
-            color: #111111;
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 30px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #2d3748;
-        }
-
-        .header h1 {
-            font-size: 24pt;
-            margin: 0 0 10px 0;
-            color: #1a202c;
-            font-weight: bold;
-            letter-spacing: -0.5px;
-        }
-
-        .header .subtitle {
-            font-size: 13pt;
-            color: #4a5568;
-            margin: 0 0 15px 0;
-            font-weight: 500;
-        }
-
-        .contact-info {
-            display: block;
-            direction: ltr;
-            font-size: 10pt;
-            color: #4a5568;
-            margin-top: 10px;
-        }
-
-        .contact-info a {
-            color: #2b6cb0;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-separator {
-            color: #cbd5e0;
-            margin: 0 8px;
-        }
-
-        .section {
-            margin-bottom: 25px;
-            page-break-inside: avoid;
-        }
-
-        .section-title {
-            font-size: 14pt;
-            color: #1a365d;
-            margin: 0 0 12px 0;
-            padding-bottom: 4px;
-            border-bottom: 1px solid #2b6cb0;
-            font-weight: bold;
-            position: relative;
-        }
-
-        .summary-text {
-            text-align: justify;
-            margin: 0;
-            color: #2d3748;
-        }
-
-        .skills-grid {
-            display: block;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .skills-item {
-            margin-bottom: 8px;
-            color: #2d3748;
-        }
-
-        .skills-item strong {
-            color: #1a202c;
-            display: inline-block;
-            min-width: 160px;
-        }
-
-        .entry {
-            margin-bottom: 18px;
-            page-break-inside: avoid;
-        }
-
-        .entry-header {
-            margin-bottom: 5px;
-        }
-
-        .entry-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 6px;
-        }
-
-        .entry-table td {
-            padding: 0;
-            vertical-align: top;
-        }
-
-        .entry-title {
-            font-size: 11.5pt;
-            font-weight: bold;
-            color: #1a202c;
-            text-align: right;
-        }
-
-        .entry-meta {
-            font-size: 10pt;
-            color: #4a5568;
-            text-align: left;
-            font-style: italic;
-            white-space: nowrap;
-        }
-
-        .entry-subtitle {
-            font-size: 10.5pt;
-            font-weight: 600;
-            color: #4a5568;
-            margin-bottom: 6px;
-        }
-
-        ul.entry-details {
-            margin: 0;
-            padding-right: 20px;
-            list-style-type: square;
-        }
-
-        ul.entry-details li {
-            margin-bottom: 5px;
-            color: #2d3748;
-            text-align: justify;
-        }
-
-        .project-tech {
-            font-size: 9.5pt;
-            color: #2b6cb0;
-            margin-top: 4px;
-            font-weight: 500;
-            direction: ltr;
-            text-align: right;
-        }
-
+        body { font-family: Vazirmatn, 'Segoe UI', Arial, sans-serif; font-size: 11pt; line-height: 1.6; color: #111111; background-color: #ffffff; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 30px; }
+        .header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 2px solid #2d3748; }
+        .header h1 { font-size: 24pt; margin: 0 0 10px 0; color: #1a202c; font-weight: bold; letter-spacing: -0.5px; }
+        .header .subtitle { font-size: 13pt; color: #4a5568; margin: 0 0 15px 0; font-weight: 500; }
+        .contact-info { display: block; direction: ltr; font-size: 10pt; color: #4a5568; margin-top: 10px; }
+        .contact-info a { color: #2b6cb0; text-decoration: none; font-weight: 500; }
+        .contact-info a:hover { text-decoration: underline; }
+        .contact-separator { color: #cbd5e0; margin: 0 8px; }
+        /* .section { margin-bottom: 25px; page-break-inside: avoid; } */
+        .section { margin-bottom: 25px; }
+        .section-title { font-size: 14pt; color: #1a365d; margin: 0 0 12px 0; padding-bottom: 4px; border-bottom: 1px solid #2b6cb0; font-weight: bold; position: relative; }
+        .summary-text { text-align: justify; margin: 0; color: #2d3748; }
+        .skills-grid { display: block; margin: 0; padding: 0; list-style: none; }
+        .skills-item { margin-bottom: 8px; color: #2d3748; }
+        .skills-item strong { color: #1a202c; display: inline-block; min-width: 160px; }
+        .entry { margin-bottom: 18px; page-break-inside: avoid; }
+        .entry-table { width: 100%; border-collapse: collapse; margin-bottom: 6px; }
+        .entry-table td { padding: 0; vertical-align: top; }
+        .entry-title { font-size: 11.5pt; font-weight: bold; color: #1a202c; text-align: right; }
+        .entry-meta { font-size: 10pt; color: #4a5568; text-align: left; font-style: italic; white-space: nowrap; }
+        .entry-subtitle { font-size: 10.5pt; font-weight: 600; color: #4a5568; margin-bottom: 6px; }
+        ul.entry-details { margin: 0; padding-right: 20px; list-style-type: square; }
+        ul.entry-details li { margin-bottom: 5px; color: #2d3748; text-align: justify; }
+        .project-tech { font-size: 9.5pt; color: #2b6cb0; margin-top: 4px; font-weight: 500; direction: ltr; text-align: right; }
+        .github-link { font-weight: normal; font-size: 10pt; color: #2b6cb0; text-decoration: none; margin-right: 8px; font-family: Arial, sans-serif; direction: ltr; display: inline-block; }
         @media print {
-            body {
-                font-size: 10pt;
-                color: #000000;
-                background-color: #ffffff;
-            }
-
-            @page {
-                size: A4;
-                margin: 15mm 12mm;
-            }
-
-            .container {
-                width: 100%;
-                max-width: 100%;
-                padding: 0;
-                margin: 0;
-            }
-
-            .header {
-                border-bottom: 2px solid #000000;
-                margin-bottom: 25px;
-                padding-bottom: 15px;
-            }
-
-            .section-title {
-                color: #000000;
-                border-bottom: 1px solid #000000;
-                page-break-after: avoid;
-            }
-
-            .entry {
-                page-break-inside: avoid;
-            }
-
-            .contact-info a {
-                color: #000000;
-                text-decoration: none;
-            }
-
-            .project-tech {
-                color: #444444;
-            }
+            body { font-size: 10pt; color: #000000; background-color: #ffffff; }
+            @page { size: A4; margin: 15mm 12mm; }
+            .container { width: 100%; max-width: 100%; padding: 0; margin: 0; }
+            .header { border-bottom: 2px solid #000000; margin-bottom: 25px; padding-bottom: 15px; }
+            .section-title { color: #000000; border-bottom: 1px solid #000000; page-break-after: avoid; }
+            .entry { page-break-inside: avoid; }
+            .contact-info a { color: #000000; text-decoration: none; }
+            .project-tech { color: #444444; }
         }
     </style>
 </head>
-
 <body>
-
     <div class="container">
-
-        <!-- هدر رزومه -->
+        <!-- Header -->
         <div class="header">
             <h1>محمدجواد محمدی</h1>
-            <div class="subtitle">مهندس مکانیک | توسعه‌دهنده نرم‌افزار و الگوریتم</div>
+            <div class="subtitle">مهندس سیستم‌های چندتخصصی (نرم‌افزار، کنترل و مکانیک)</div>
             <div class="contact-info">
-                <a href="https://github.com/JNemune" target="_blank">github.com/JNemune</a>
-                <span class="contact-separator">|</span>
-                <a href="mailto:jnemune2002@gmail.com">jnemune2002@gmail.com</a>
-                <span class="contact-separator">|</span>
-                <span>09362043282</span>
-                <span class="contact-separator">|</span>
-                <span>تهران، ایران</span>
+                <a href="mailto:m.javad.mohammadi@ut.ac.ir">m.javad.mohammadi@ut.ac.ir</a> <span class="contact-separator">|</span> <a href="mailto:JNemune2002@gmail.com">JNemune2002@gmail.com</a> <span class="contact-separator">|</span> <a href="tel:09362043282">09362043282</a> <span class="contact-separator">|</span> <a href="https://github.com/JNemune" target="_blank">github.com/JNemune</a> <span class="contact-separator">|</span> تهران
             </div>
         </div>
 
-        <!-- خلاصه حرفه‌ای -->
+        <!-- Summary -->
         <div class="section">
-            <div class="section-title">خلاصه</div>
-            <p class="summary-text">
-                مهندس مکانیک با پیش‌زمینه‌ در توسعه نرم‌افزار، الگوریتم‌های بهینه‌سازی و پردازش سیگنال. تجربه عملی من در
-                طراحی سیستم‌های مکاترونیکی همواره با تمرکز بر تحلیل داده‌های فیزیکی (ارتعاشات، سنسورها) و پیاده‌سازی
-                مدل‌های ریاضی همراه بوده است. با تسلط بر پایتون و متلب و توانایی توسعه بک‌اند و رابط‌های کاربری (PyQt)،
-                علاقه‌مندم مهارت‌های خود در استخراج ویژگی از سیگنال‌های خام و الگوریتم‌های تحلیلی را برای حل مسائل
-                پیچیده و خودکارسازی فرآیندها در صنعت به کار بگیرم.
-            </p>
+            <div class="section-title">خلاصه حرفه‌ای</div>
+            <p class="summary-text">مهندس مکانیک و توسعه‌دهنده نرم‌افزار با تمرکز بر Firmware و سیستم‌های نهفته (Embedded). تجربه عملی من در توسعه بک‌اند سیستم‌های سازمانی (Django) در کنار تسلط بر برنامه‌نویسی میکروکنترلرها (C/C++) و پردازش سیگنال، به من دیدگاهی جامع برای تحلیل و پیاده‌سازی الگوریتم‌های پیچیده و سیستم‌های کنترل داده‌محور داده است. علاقه‌مند به حل مسائل چالش‌برانگیز در تقاطع مهندسی مکانیک، برق و نرم‌افزار.</p>
         </div>
 
-        <!-- مهارت‌های کلیدی -->
+        <!-- Skills -->
         <div class="section">
-            <div class="section-title">مهارت‌ها</div>
+            <div class="section-title">مهارت‌های کلیدی</div>
             <ul class="skills-grid">
-                <li class="skills-item"><strong>نرم‌افزار و برنامه‌نویسی:</strong> Python (Django, PySide6), MATLAB,
-                    C++, C</li>
-                <li class="skills-item"><strong>الگوریتم و مدل‌سازی:</strong> Signal Processing (FFT, Filters),
-                    Heuristic Optimization (GA, PSO, NSGA-II), Mathematical Modeling</li>
-                <li class="skills-item"><strong>سخت‌افزار و کنترل:</strong> Sensor Fusion (IMU, Load Cell),
-                    Microcontrollers, Embedded Systems, I2C</li>
-                <li class="skills-item"><strong>مهارت‌های توسعه:</strong> System Architecture, Agile/Scrum (Scrum
-                    Master), Multi-threading, PostgreSQL</li>
+                <li class="skills-item"><strong>توسعه نرم‌افزار:</strong> Python (مسلط)، C++، Django (تجربه عملی و توسعه محصول)</li>
+                <li class="skills-item"><strong>مهندسی و شبیه‌سازی:</strong> MATLAB، Simulink، Simscape، SolidWorks، ADAMS</li>
+                <li class="skills-item"><strong>داده و الگوریتم:</strong> NumPy، Pandas، پایگاه‌داده (SQLite, PostgreSQL, SQL)، محاسبات عددی و بهینه‌سازی</li>
+                <li class="skills-item"><strong>سخت‌افزار و سیستم‌ها:</strong> آشنایی پایه‌ای با ROS، Arduino و معماری ARM</li>
+                <li class="skills-item"><strong>ابزارها:</strong> PyQt (PySide6)، Tkinter، LaTeX، Git</li>
             </ul>
         </div>
 
-        <!-- سوابق شغلی -->
+        <!-- Experience -->
         <div class="section">
             <div class="section-title">سوابق شغلی</div>
-
-            <!-- موقعیت اول -->
+            
             <div class="entry">
                 <table class="entry-table">
                     <tr>
-                        <td class="entry-title">کارآموز ثابت‌افزار (Firmware Engineer Intern)</td>
+                        <td class="entry-title">توسعه‌دهنده Firmware (کارآموز)</td>
                         <td class="entry-meta">تیر ۱۴۰۴ – دی ۱۴۰۴</td>
                     </tr>
                 </table>
                 <div class="entry-subtitle">فن‌آوری‌های هوشمند کاشف</div>
                 <ul class="entry-details">
-                    <li>توسعه نرم‌افزار مصورسازی داده (Electronic Lab Notebook) با PyQt (PySide6) برای مانیتورینگ و
-                        تحلیل سیگنال‌های الکتروشیمیایی.</li>
-                    <li>برنامه‌نویسی میکروکنترلر با زبان C جهت راه‌اندازی برد اندازه‌گیری دقیق AD5940، شامل دریافت و
-                        پردازش سیگنال‌های خام از سنسورهای مینیاتوری با فرکانس نمونه‌برداری ۱۰۰ هرتز.</li>
+                    <li>توسعه نرم‌افزار جامع مصورسازی داده (Electronic Lab Notebook) با استفاده از فریم‌ورک PyQt (PySide6) جهت مانیتورینگ و تحلیل بلادرنگ سیگنال‌های الکتروشیمیایی.</li>
+                    <li>برنامه‌نویسی سطح پایین (C) برای میکروکنترلر و راه‌اندازی برد اندازه‌گیری AD5940، شامل دریافت، فیلترینگ و پردازش سیگنال‌های خام از سنسورهای مینیاتوری با فرکانس نمونه‌برداری ۱۰۰ هرتز.</li>
                 </ul>
             </div>
 
-            <!-- موقعیت دوم -->
             <div class="entry">
                 <table class="entry-table">
                     <tr>
-                        <td class="entry-title">مهندس نرم‌افزار (Software Engineer)</td>
+                        <td class="entry-title">مهندس نرم‌افزار و اسکرام‌مستر</td>
                         <td class="entry-meta">بهمن ۱۴۰۰ – تیر ۱۴۰۴</td>
                     </tr>
                 </table>
-                <div class="entry-subtitle">شرکت چوب لباسی رنگین‌کمان</div>
+                <div class="entry-subtitle">شرکت چوب لباسی زولن</div>
                 <ul class="entry-details">
-                    <li>ایفای نقش در معماری و توسعه بک‌اند سیستم ERP سازمان با استفاده از Python و Django REST
-                        Framework.</li>
-                    <li>پیاده‌سازی پردازش‌های همزمان (Multi-threading) برای بهینه‌سازی توابع کلیدی و افزایش کارایی
-                        بک‌اند سیستم.</li>
-                    <li>فعالیت به عنوان اسکرام مستر (Scrum Master)، مدیریت فرآیندهای چابک تیم توسعه و تسهیل ارتباطات
-                        بین‌تیمی.</li>
+                    <li>مشارکت در معماری و توسعه بک‌اند سیستم جامع برنامه‌ریزی منابع سازمان (ERP) با بهره‌گیری از فریم‌ورک Python/Django.</li>
+                    <li>توسعه و یکپارچه‌سازی ماژول‌های کلیدی کسب‌وکار شامل: سیستم مدیریت منابع انسانی، سیستم انبارداری (کارتکس و حواله‌ها) و مدیریت خط تولید بر مبنای فرمولاسیون ساخت (BOM).</li>
+                    <li>پیاده‌سازی منطق محاسباتی پیچیده جهت پردازش داده‌ها و استخراج گزارش‌های دقیق مالی نظیر ترازنامه، صورت‌حساب سود و زیان و محاسبه قیمت تمام‌شده محصولات.</li>
+                    <li>هدایت تیم توسعه به عنوان اسکرام‌مستر، مدیریت فرآیندهای چابک (Agile) و تسهیل ارتباطات بین‌تیمی جهت تسریع روند تحویل محصول.</li>
                 </ul>
             </div>
 
-            <!-- موقعیت سوم -->
             <div class="entry">
                 <table class="entry-table">
                     <tr>
                         <td class="entry-title">توسعه‌دهنده بک‌اند (پروژه‌ای)</td>
-                        <td class="entry-meta">دوره پروژه‌ای</td>
+                        <td class="entry-meta">تیر ۱۴۰۴ – شهریور ۱۴۰۴</td>
                     </tr>
                 </table>
                 <div class="entry-subtitle">پژوهشکده فناوری‌های همگرا دانشگاه تهران (NBIC)</div>
                 <ul class="entry-details">
-                    <li>طراحی و توسعه سیستم بک‌اند پلتفرم وب Uput جهت پیاده‌سازی و برگزاری هکاتون‌ها و مسابقات حل مسئله
-                        چالش‌های صنعتی.</li>
-                    <!-- <li>پیاده‌سازی ماژول‌های مدیریت چرخه مسابقات شامل ثبت نیازهای شرکت‌ها، زیرسیستم ارسال راه‌حل توسط
-                        تیم‌ها، و پنل ارزیابی و داوری منتورها.</li> -->
+                    <li>طراحی و توسعه سیستم بک‌اند پلتفرم Uput جهت مدیریت، اتوماسیون و برگزاری هکاتون‌ها و چالش‌های حل مسئله صنعتی.</li>
+                    <li>پیاده‌سازی ماژول‌های مدیریت چرخه مسابقات شامل سیستم ثبت نیازهای شرکت‌ها، زیرسیستم ارسال راه‌حل توسط تیم‌ها، و توسعه پنل ارزیابی و داوری منتورها.</li>
                 </ul>
             </div>
+        </div>
 
-            <!-- پروژه‌های کلیدی تحلیلی و مهندسی -->
-            <div class="section">
-                <div class="section-title">پروژه‌ها</div>
-
-                <!-- پروژه ۱ -->
-                <div class="entry">
-                    <table class="entry-table">
-                        <tr>
-                            <td class="entry-title">مدل‌سازی یادگیری ماشین برای نگهداری پیش‌بینانه تجهیزات صنعتی
-                                <!-- <a href="https://github.com/JNemune/نام-مخزن-شما" target="_blank"
-                                    style="font-weight: normal; font-size: 10pt; color: #2b6cb0; text-decoration: none; margin-right: 8px; font-family: Arial, sans-serif; direction: ltr; display: inline-block;">[GitHub]</a> -->
-                            </td>
-                            <td class="entry-meta">پروژه تحلیل داده و هوش مصنوعی</td>
-                        </tr>
-                    </table>
-                    <ul class="entry-details">
-                        <li>تحلیل اکتشافی داده‌ها (EDA)، پاک‌سازی و پیش‌پردازش داده‌های ساختاریافته‌ی حسگرهای فیزیکی
-                            ماشین‌آلات (شامل دما، گشتاور و سرعت دورانی) جهت آماده‌سازی برای فرآیند یادگیری.</li>
-                        <li>پیاده‌سازی، آموزش و ارزیابی مدل‌های طبقه‌بندی کلاسیک (مانند Gradient
-                            Boosting) با استفاده از کتابخانه Scikit-Learn جهت پیش‌بینی هوشمند و دسته‌بندی انواع شکست‌های
-                            مکانیکی.</li>
-                    </ul>
-                    <div class="project-tech">Technologies: Python, Pandas, NumPy, Scikit-Learn, Predictive Maintenance,
-                        Classification</div>
-                </div>
-
-                <!-- پروژه ۲ -->
-                <div class="entry">
-                    <table class="entry-table">
-                        <tr>
-                            <td class="entry-title">طراحی سنسور ارتعاشات مغناطیسی و پردازش سیگنال</td>
-                            <td class="entry-meta">پروژه ساخت و تحلیل</td>
-                        </tr>
-                    </table>
-                    <ul class="entry-details">
-                        <li>طراحی و ساخت کامل یک سیستم اندازه‌گیری ارتعاشات کم‌فرکانس (۱ تا ۱۰ هرتز) مبتنی بر قانون
-                            القای
-                            فارادی، شامل مدار آماده‌سازی سیگنال (فیلتر RC و تقویت‌کننده Op-Amp).</li>
-                        <li>توسعه اسکریپت‌های تحلیلی در MATLAB و استفاده از تبدیل فوریه سریع (FFT) روی داده‌های سری
-                            زمانی
-                            برای استخراج دقیق فرکانس طبیعی سیستم (~۱۳.۴ هرتز).</li>
-                    </ul>
-                    <div class="project-tech">Technologies: MATLAB, Arduino (C++), Signal Conditioning, FFT, Mechanical
-                        Vibrations</div>
-                </div>
-
-                <!-- پروژه ۳ -->
-                <div class="entry">
-                    <table class="entry-table">
-                        <tr>
-                            <td class="entry-title">بهینه‌سازی سیستم‌های مکانیکی (Optimization Algorithms)</td>
-                            <td class="entry-meta">پروژه مدل‌سازی عددی</td>
-                        </tr>
-                    </table>
-                    <ul class="entry-details">
-                        <li>پیاده‌سازی الگوریتم‌های تکاملی و هوشمند نظیر ژنتیک (GA)، ازدحام ذرات (PSO) و NSGA-II در
-                            محیط‌های
-                            پایتون و متلب.</li>
-                        <li>فرمول‌بندی ریاضی مسائل غیرخطی و چندهدفه مهندسی (مانند بهینه‌سازی توپولوژی خرپا و هیت‌سینک) و
-                            تولید جبهه پارتو (Pareto Front) جهت ایجاد تعادل بهینه بین متغیرهای چندگانه.</li>
-                    </ul>
-                    <div class="project-tech">Technologies: MATLAB, Python, Genetic Algorithms, PSO, NSGA-II</div>
-                </div>
-
-                <!-- پروژه ۴ -->
-                <div class="entry">
-                    <table class="entry-table">
-                        <tr>
-                            <td class="entry-title">ربات‌های خودکار و موتورهای تصمیم‌گیر هوشمند (AI Decision Engines)
-                            </td>
-                            <td class="entry-meta">توسعه هوش الگوریتمی</td>
-                        </tr>
-                    </table>
-                    <ul class="entry-details">
-                        <li>توسعه هوش مصنوعی و ربات‌های خودکار برای بازی‌های استراتژیک (MineSweeper و Othello) در پایتون
-                            و
-                            C++ با استفاده از منطق احتمالات، تحلیل ماتریس همسایگی و الگوریتم‌های چرخه‌ی عمر وظایف.</li>
-                        <li>توسعه نرم‌افزار شبیه‌ساز مدیریت مرکزی آسانسور مبتنی بر الگوریتم جستجوی مطلع *A با هدف
-                            کمینه‌سازی
-                            زمان انتظار کاربران و بهینه‌سازی مصرف انرژی.</li>
-                    </ul>
-                    <div class="project-tech">Technologies: Python, C++, A* Search, Logic-Based Strategies, ROS 2
-                        Principles
-                    </div>
-                </div>
-
-                <!-- تحصیلات -->
-                <div class="section">
-                    <div class="section-title">تحصیلات</div>
-                    <div class="entry">
-                        <table class="entry-table">
-                            <tr>
-                                <td class="entry-title">کارشناسی مهندسی مکانیک</td>
-                                <td class="entry-meta">مهر ۱۴۰۰ – اکنون</td>
-                            </tr>
-                        </table>
-                        <div class="entry-subtitle">دانشگاه تهران - تهران، ایران</div>
-                    </div>
-                </div>
-
+        <!-- Projects -->
+        <div class="section">
+            <div class="section-title">پروژه‌های کلیدی</div>
+            
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">
+                            سیستم نهفته ادغام سنسورها (IMU & Load Cell)
+                            <a href="https://github.com/JNemune/Embedded-Robotics-Sensors" target="_blank" class="github-link">[GitHub]</a>
+                        </td>
+                        <td class="entry-meta">سیستم‌های کنترل و سخت‌افزار</td>
+                    </tr>
+                </table>
+                <ul class="entry-details">
+                    <li>توسعه سیستم جمع‌آوری و پردازش داده مبتنی بر C++ و آردوینو جهت خوانش بلادرنگ سنسور وزن (HX711) و سنسور اینرسی (MPU6050) از طریق پروتکل I2C.</li>
+                    <li>پیاده‌سازی فیلتر مکمل (Complementary Filter) و بهره‌گیری از پردازنده داخلی DMP جهت رفع خطای دریفت ژیروسکوپ و استخراج دقیق زوایای اویلر و ماتریس‌های چرخش.</li>
+                </ul>
+                <div class="project-tech">C++, Arduino, Sensor Fusion, I2C Protocol, Signal Filtering</div>
             </div>
 
-</body>
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">
+                            بهینه‌سازی هوشمند سیستم‌های چندهدفه
+                            <a href="https://github.com/JNemune/Optimization-of-Mechanical-Systems" target="_blank" class="github-link">[GitHub]</a>
+                        </td>
+                        <td class="entry-meta">مدل‌سازی عددی و الگوریتم</td>
+                    </tr>
+                </table>
+                <ul class="entry-details">
+                    <li>فرمول‌بندی ریاضی و حل مسائل پیچیده مهندسی (نظیر تنظیم کنترلر PID و طراحی هیت‌سینک) با استفاده از الگوریتم‌های گرادیان‌محور و بدون مشتق.</li>
+                    <li>توسعه و پیاده‌سازی الگوریتم‌های تکاملی نظیر ژنتیک (GA)، ازدحام ذرات (PSO) و NSGA-II در Python و MATLAB جهت استخراج جبهه پارتو (Pareto Front) و تصمیم‌گیری بهینه.</li>
+                </ul>
+                <div class="project-tech">Python, MATLAB, Genetic Algorithms, PSO, NSGA-II, KKT Conditions</div>
+            </div>
 
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">
+                            طراحی سنسور ارتعاشات مغناطیسی و پردازش سیگنال
+                            <a href="https://github.com/JNemune/Magnetic-Vibration-Sensor" target="_blank" class="github-link">[GitHub]</a>
+                        </td>
+                        <td class="entry-meta">ساخت سخت‌افزار و پردازش سیگنال</td>
+                    </tr>
+                </table>
+                <ul class="entry-details">
+                    <li>طراحی مدار آنالوگ و آماده‌سازی سیگنال (فیلتر RC و Op-Amp) برای سیستم اندازه‌گیری ارتعاشات کم‌فرکانس مبتنی بر القای فارادی.</li>
+                    <li>توسعه اسکریپت‌های پردازشی در متلب و اعمال تبدیل فوریه سریع (FFT) بر روی داده‌های سری زمانی جهت استخراج دقیق فرکانس طبیعی سیستم فیزیکی.</li>
+                </ul>
+                <div class="project-tech">MATLAB, Arduino (C++), Signal Conditioning, FFT, Mechanical Vibrations</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">تحصیلات</div>
+
+            <div class="entry">
+                <table class="entry-table">
+                    <tr>
+                        <td class="entry-title">کارشناسی مهندسی مکانیک</td>
+                        <td class="entry-meta">مهر ۱۴۰۰ – شهریور ۱۴۰۵</td>
+                    </tr>
+                </table>
+                <div class="entry-subtitle">دانشگاه تهران - تهران، ایران</div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
